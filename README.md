@@ -5,8 +5,9 @@ Config for building kernel and root filesystem for Raspberry Pi 4
 ## Build steps ##
 1. Checkout 2022.x branch in buildroot
 2. Modify buildroot menuconfig toolchain settings as per requirements
-3. Run build.sh
-4. Flashing images are generated in the buildroot/output/images folder.
+3. Delete the aesd_qemu_defconfig from base_external directory.
+4. Run build.sh
+5. Flashing images are generated in the buildroot/output/images folder.
 
 ## Flashing RPi ##
 RPi4 compute module has an onboard eMMC which requires a specific set of steps to be followed for flashing.
